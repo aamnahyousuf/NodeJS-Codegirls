@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <title>To do List</title>
+</head>
+<body>
+    <h1>To do List</h1>
+    <button id="button">Add New</button>
+
+    <script>
+        let todoList = [];
+        $("#button").click(function(){
+            let data = prompt("Please enter a todo.");
+
+        let newTodo= $("<input>").attr({
+            type: "checkbox",
+            value: data
+        });
+        let todoDiv = $("<div>");
+            $("body").append(todoDiv);
+
+        let label = $("<label>")
+            .text(" " +  data)
+            .prepend(newTodo);
+            todoDiv.append(label);
+
+       let editButton = $("<button>")
+            .text("Edit")
+            todoDiv.append(editButton); 
+
+       let deleteButton = $("<button>")             
+            .text("Delete")
+            todoDiv.append(deleteButton);
+        
+            editButton.click(function(){
+            let editTodo = prompt("Edit your Todo.");
+            label.text(" " + editTodo)
+            .prepend(newTodo);
+            });
+            deleteButton.click(function(){
+            let index = todoList.indexOf(data);
+            todoList.splice(index,1);
+            label.remove();
+            editButton.remove();
+            deleteButton.remove();
+            });
+        })
+
+
+
+    </script>
+</body>
+</html>
