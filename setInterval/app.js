@@ -3,7 +3,7 @@ console.log("Enter time:");
 process.stdin.on("data", (input) =>{
     i = Number(input);
 
-timer = setInterval(() => {
+let timer = setInterval(() => {
   console.log(i);
   i++;
 
