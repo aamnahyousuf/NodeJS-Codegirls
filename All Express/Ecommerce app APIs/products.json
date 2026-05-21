@@ -1,0 +1,16 @@
+{
+    "products":[
+        {
+            "productId": 100,
+            "name": "annotator"
+        },
+        {
+            "productId": 101,
+            "name": "stickers"
+        },
+        {
+            "productId": 102,
+            "name": "books"
+        }
+    ]
+}
