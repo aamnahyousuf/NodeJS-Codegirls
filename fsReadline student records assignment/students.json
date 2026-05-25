@@ -1,0 +1,30 @@
+{
+    "students": [
+        {
+            "id": 1000,
+            "name": "Humray",
+            "marks": 92
+        },
+        {
+            "id": 1001,
+            "name": "Arham",
+            "marks": 56
+        },
+        {
+            "id": 1002,
+            "name": "Khadeeja",
+            "marks": 77
+        },
+        {
+            "id": 1003,
+            "name": "Aiman",
+            "marks": 86
+        },
+        {
+            "id": 1004,
+            "name": "Bushra",
+            "marks": 79
+        }
+    ]
+
+}
