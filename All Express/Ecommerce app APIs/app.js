@@ -11,7 +11,6 @@ app.get("/", (req,res) => {
     res.send("User logged in");
 });
 
-//ye sir se puch lena 
 const { products: productList } = products;
 app.get("/products",(req,res) =>{
     res.send(products);
