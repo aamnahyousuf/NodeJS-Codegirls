@@ -19,4 +19,5 @@ class Car extends Vehicle {
 }
 
 const Mercy = new Car ("Merecedes", 2014, "Diesel")
+console.log(Mercy.start());
 console.log(Mercy.carInfo());
